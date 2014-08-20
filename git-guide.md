@@ -61,5 +61,7 @@ $git push origin <new_branch>
 ==========================================
 
 $git rm -r --cached .
+
 $git add .
+
 $git commit -m ".gitignore is now working"
