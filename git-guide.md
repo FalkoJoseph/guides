@@ -65,3 +65,8 @@ $git rm -r --cached .
 $git add .
 
 $git commit -m ".gitignore is now working"
+
+6. Reset current branch
+=======================
+
+$git reset --hard origin/master
