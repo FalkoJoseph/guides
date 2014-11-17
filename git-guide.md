@@ -65,3 +65,5 @@ Save, with using esc => `:wq`
 
 You'll get prompted with a new message, change the commit message eventually.
 again, save with using esc => `:wq`
+
+If all is good use `$git push -f`.
