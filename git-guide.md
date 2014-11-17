@@ -1,85 +1,67 @@
 Git worflow
 -----------
 
-0. Shortcuts
-============
+### 0. Shortcuts
 
-$g st (status)
-$g aa (add all)
-$g push
-$g up (rebase)
-$g co (checkout)
+    $g st (status)
+    $g aa (add all)
+    $g push
+    $g up (rebase)
+    $g co (checkout)
 
 
-1. Getting the latest changes
-=============================
+### 1. Getting the latest changes
 
-$git fetch
+    $git fetch
+    $git rebase origin/master
 
-$git rebase origin/master
+**(if succesfull):**
 
-(if succesfull):
+    $git push origin <branch> -f
 
-  $git push origin <branch> -f
+**(if not succesfull):**
 
-(if not succesfull):
+   solve problems in files
+   $git rebase --continue
+   $git push origin <branch>
 
-  solve problems in files
+### 2. Merging with master branch
 
-  $git rebase --continue
+Merge via github.com, afterwards delete branch
 
-  $git push origin <branch>
+### 3. Delete old branch locally
 
-2. Merging with master branch
-=============================
+    $git checkout master
+    $git branch -D <old_branch>
+    $git push origin :<old_branch>
 
-Merge via github.com
+### 4. Get the latest changes from master
 
-Delete branch
+    $git pull
 
-3. Delete old branch locally
-============================
+### 5. Create a new branch
 
-$git checkout master
+    $git checkout -b <new_branch>
+    $git push origin <new_branch>
 
-$git branch -D <old_branch>
-$git push origin :<old_branch>
+### 5. Remove cached files (updated gitignore)
 
-4. Get the latest changes from master
-=====================================
+    $git rm -r --cached .
+    $git add .
+    $git commit -m ".gitignore is now working"
 
-$git pull
+### 6. Reset current branch
 
-5. Create a new branch
-======================
+    $git reset --hard origin/master
 
-$git checkout -b <new_branch>
-
-$git push origin <new_branch>
-
-5. Remove cached files (updated gitignore)
-==========================================
-
-$git rm -r --cached .
-
-$git add .
-
-$git commit -m ".gitignore is now working"
-
-6. Reset current branch
-=======================
-
-$git reset --hard origin/master
-
-7. Squash multiple commits into one
-===================================
+### 7. Squash multiple commits into one
 
 Look for the amount of commits to squash and go to the selected branch
 
-$git rebase -i HEAD~<amount of commits>
+    $git rebase -i HEAD~<amount of commits>
 
 Pick the commits you want to squash and change "pick" to "s"
-Save, with using esc => :wq
+Save, with using esc => `:wq`
 
 You'll get prompted with a new message, change the commit message eventually.
-again, save with using esc => :wq
+again, save with using esc => `:wq`
