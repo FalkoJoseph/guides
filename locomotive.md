@@ -1,8 +1,7 @@
 Locomotive workflow
 --------------------
 
-1. Get all the remote changes
-=============================
+### 1. Get all the remote changes
 
-$ bundle exec wagon pull
-$ git pull
+    $ bundle exec wagon pull
+    $ git pull
