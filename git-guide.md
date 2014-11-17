@@ -70,3 +70,16 @@ $git commit -m ".gitignore is now working"
 =======================
 
 $git reset --hard origin/master
+
+7. Squash multiple commits into one
+===================================
+
+Look for the amount of commits to squash and go to the selected branch
+
+$git rebase -i HEAD~<amount of commits>
+
+Pick the commits you want to squash and change "pick" to "s"
+Save, with using esc => :wq
+
+You'll get prompted with a new message, change the commit message eventually.
+again, save with using esc => :wq
