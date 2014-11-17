@@ -8,6 +8,7 @@ Git worflow
     $g push
     $g up (rebase)
     $g co (checkout)
+    $g sq <number> (squash)
 
 
 ### 1. Getting the latest changes
