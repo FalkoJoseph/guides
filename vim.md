@@ -80,15 +80,19 @@ Type `t` while in NERDTree
 `:ci"`
 
 **Remove line**
+
 `dd`
 
 **Delete from cursor to the end of the word**
+
 `de`
 
 **Delete until the next space**
+
 `dE`
 
 **Delete current word**
+
 `diw`
 
 **Delete within the current parentheses**
@@ -98,23 +102,24 @@ Type `t` while in NERDTree
 
 `di"`
 
-wefwfwefqwefw
-fwfwefqwefwq wef w ewf wefwef ewfwefwefwef
-efwfwf
-
 **Yank text from here to the end of the word**
+
 `ye` / `yE`
 
 **Copy current word**
+
 `bye`
 
 **Copy current line**
+
 `yy`
 
 **Cut current line**
+
 `cc`
 
 **Move current line one row down**
+
 `ddp`
 
 ### Tricks
