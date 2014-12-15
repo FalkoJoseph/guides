@@ -96,11 +96,22 @@ Type `t` while in NERDTree
 `diw`
 
 **Delete within the current parentheses**
+
 `di(`
 
 **Delete text between quotes**
 
 `di"`
+
+**Delete until the next word**
+
+`dw`
+
+**Delete to the end of the line**
+
+`dG`
+
+**Delete **
 
 **Yank text from here to the end of the word**
 
