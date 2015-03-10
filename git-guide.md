@@ -72,3 +72,10 @@ If all is good use `$git push -f`.
 ### 8. Push force current branch only
 
     $git push origin <branch> -f
+
+### 9. Work together on one branch
+
+    $git fetch origin
+    $git commit
+    $git rebase origin/<branch>
+    $git push
