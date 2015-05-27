@@ -53,11 +53,15 @@ Start listening to your Guardfile with `bundle exec guard`
 
 ## Migrations
 
-#### Create a migration
+#### Create a new table
+
+    rails generate migration CreateProducts name:string part_number:string
+
+#### Add a column
 
     rails generate migration AddPartNumberToProducts (username:string)
 
-#### Create a migration with an index
+#### Add a column with an index
 
     rails generate migration AddPartNumberToProducts part_number:string:index
 
