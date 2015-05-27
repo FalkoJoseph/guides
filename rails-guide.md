@@ -51,7 +51,21 @@ Run `bundle install --without production`
 
 Start listening to your Guardfile with `bundle exec guard`
 
-## Memorable commands
+## Migrations
+
+#### Create a migration
+
+    rails generate migration AddPartNumberToProducts (username:string)
+
+#### Create a migration with an index
+
+    rails generate migration AddPartNumberToProducts part_number:string:index
+
+#### Remove a column from a migration
+
+    rails generate migration RemovePartNumberFromProducts
+
+## Generators
 
 #### Create a controller, model, controller, migration and a test
 
@@ -67,7 +81,7 @@ Also creates a view, helper, test
 
 Also creates a test and migration
 
-    rails generate controller Greetings hello
+    rails generate model Product name:string description:text
 
 #### Create an integration test
 
