@@ -79,3 +79,7 @@ If all is good use `$git push -f`.
     $git commit
     $git rebase origin/<branch>
     $git push
+
+### 10. Clean branch (remove untracked files)
+
+    $git clean -d -f -f
