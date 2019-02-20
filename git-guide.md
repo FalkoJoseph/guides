@@ -83,3 +83,8 @@ If all is good use `$git push -f`.
 ### 10. Clean branch (remove untracked files)
 
     $git clean -d -f -f
+    
+### 11. Remove a large staged file
+
+    $git filter-branch --tree-filter '<path>' HEAD
+    $git push
